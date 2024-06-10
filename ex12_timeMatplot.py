@@ -4,8 +4,9 @@ import random
 
 wordList = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape', 'honeydew', 'kiwi', 'lemon', 'mango', 'nectarine', 'orange', 'pear', 'quince', 'raspberry', 'strawberry', 'tangerine', 'ugli', 'watermelon', 'xigua', 'yam', 'zucchini']
 
+# initialize the list, attempt number and mistakes
 timeList = []
-wordtyped =[]
+attempts =[]
 mistakes = 0
 
 word = wordList[random.randint(0, len(wordList)-1)] #choose a random word from the list
@@ -19,10 +20,10 @@ for i in range(5): #repeat the process five times
     if userInput != word:
         mistakes += 1
     timeList.append(end-start)
-    wordtyped.append(i+1)
+    attempts.append(i+1)
 
-print("You made ", mistakes, "mistakes.")
-x = wordtyped
+print("You made ", mistakes, "mistake(s).")
+x = attempts
 y = timeList
 
 #plot the graph
