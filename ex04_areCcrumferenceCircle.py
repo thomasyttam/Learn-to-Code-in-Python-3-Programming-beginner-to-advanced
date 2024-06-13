@@ -1,3 +1,5 @@
+# Description: This program calculates the area and circumference of a circle given the radius.
+
 import math
 
 radius = float(input("Please input the radius of the circle: "))

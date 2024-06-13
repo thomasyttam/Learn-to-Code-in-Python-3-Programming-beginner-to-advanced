@@ -1,3 +1,5 @@
+# Description: This program demonstrates the use of the random module to create a color guessing game.
+
 import random
 
 colorList=["red", "orange", "yellow", "green", "blue", "indigo", "violet", "black", 

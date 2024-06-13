@@ -1,3 +1,5 @@
+# Description: This program demonstrates how to handle errors in Python.
+
 data_valid = False
 
 while data_valid == False:

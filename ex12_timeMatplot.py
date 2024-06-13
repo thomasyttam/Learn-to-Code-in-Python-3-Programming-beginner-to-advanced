@@ -1,3 +1,5 @@
+# Description: This program demonstrate the use of time module and matplotlib to measure typing speed.
+
 import time as t
 import matplotlib.pyplot as plt
 import random

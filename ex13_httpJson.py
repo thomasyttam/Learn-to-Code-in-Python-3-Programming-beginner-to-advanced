@@ -1,6 +1,9 @@
+# Description: This program use reuqests module to get a question from the Open Trivia Database API and ask the user to answer the question. The program will keep asking the user to play again until the user decides to stop.
+
 import requests
 import json
 import random
+import html
 
 GoOn = True
 url = "https://opentdb.com/api.php?amount=1&category=17&difficulty=easy&type=multiple"
@@ -18,10 +21,11 @@ while GoOn:
         correctAnswer = data['results'][0]['correct_answer']
         answers.append(correctAnswer)
         random.shuffle(answers)
-        print(question)
+        
+        print(html.unescape(question))
 
         for i in range(len(answers)):
-            print(i+1, answers[i])
+            print(i+1, "-", html.unescape(answers[i]))
         
         invalidAnswer = True
 
@@ -42,7 +46,7 @@ while GoOn:
             except:
                 print("Please enter a number from 1 to", len(answers), "only"   )
 
-        print("Your current score is", score)
+        print("Your current score is", score,"\n")
         answer = input("Do you want to play again? (yes/no): ")
         
         if answer.lower() == "no":

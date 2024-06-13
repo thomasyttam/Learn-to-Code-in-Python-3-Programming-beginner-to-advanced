@@ -1,3 +1,5 @@
+# Description: This program calculates the Body Mass Index (BMI)
+
 print("Exercise 08 - Conditional Statements - Calculate BMI")
 weight = float(input("Please input your weight in kg: "))
 height = float(input("Please input your height in m: "))

@@ -1,3 +1,5 @@
+# Description: This program demonstrats the use of random module and lists.
+
 import random
 
 nameList=[]
