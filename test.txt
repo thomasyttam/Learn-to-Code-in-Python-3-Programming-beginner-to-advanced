@@ -1,2 +1,1 @@
-This is the test file to do in ex14.
-This is the second line.
+It is trying to input the data.
