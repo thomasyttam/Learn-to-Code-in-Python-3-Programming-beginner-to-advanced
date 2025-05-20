@@ -23,4 +23,7 @@ while True:
         else:
             color = random.choice(colorList)
     else:
-        print("The color you entered is not in the list. Please try again.")
+        if guessColor.lower() in colorList:
+            print("Sorry, that's not the correct color. Try again.")
+        else:
+            print("The color you entered is not in the list. Please try again.")
